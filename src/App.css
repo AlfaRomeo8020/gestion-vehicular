@@ -1,0 +1,185 @@
+.App {
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column; 
+  width: 100%; 
+}
+
+/* Contenedor de layout para las dos secciones debajo del header */
+.layout-container {
+  display: flex; /* Flex para organizar los layouts lado a lado */
+  flex: 1; /* Ocupa el espacio restante de la pantalla */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Layout izquierda (Listar) */
+.left-layout {
+  flex: 0 0 65%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-right: 0px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Layout derecha (Form) */
+.right-layout {
+  flex: 0 0 40%; 
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  display: flex; /* Habilita flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100%; /* Ocupa todo el alto del contenedor */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Ocupa todo el ancho */
+  box-sizing: border-box;
+}
+
+h1 , h2{
+  text-align: center; /* Centra el texto horizontalmente */
+} 
+
+h2 {  
+  margin: 20px 0 0 -100px; 
+} 
+
+.left-align {
+  text-align: left; /* Alinear a la izquierda */
+  margin: 20px 0 0 0; /* Puedes ajustar el margen según necesites */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; /* Dispone los elementos en una columna */
+  width: 300px; /* Puedes ajustar el ancho si lo deseas */
+  margin: 20px 0 0 -100px; /* Centra el formulario en la pantalla */  
+}
+
+.form-input {
+  margin-bottom: 10px; /* Espacio entre los elementos */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%; /* Asegura que los campos ocupen el ancho completo */
+  box-sizing: border-box;
+}
+
+.form-button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-button:hover {
+  background-color: #21a1f1;
+}
+
+table {
+  width: 100%; /* Asegura que la tabla use el ancho completo */
+  border-collapse: collapse; /* Elimina los espacios entre las celdas */
+  margin: 20px 0 0 auto; 
+}
+
+th, td {
+  border: 1px solid #ddd; /* Borde alrededor de las celdas */
+  padding: 8px; /* Espacio interno en las celdas */
+  text-align: center; /* Centrar el texto en todas las celdas */
+}
+
+th {
+  background-color: #add8e6; /* Color azul suave (light blue) */
+  color: black; /* Color del texto de la cabecera */
+  padding: 10px; /* Espacio interno en las celdas de la cabecera */
+}
+.td-centrado {
+  text-align: center; /* Centramos solo el contenido de esta celda */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Gris suave para filas pares */
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff; /* Blanco para filas impares */
+}
+
+.action-button {
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+
+.btn-primary {
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 15px; /* Relleno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar a puntero */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambia el color de fondo al pasar el mouse */
+.btn-primary:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Botón Peligroso (Danger) */
+.btn-danger {
+  background-color: #dc3545; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 15px; /* Relleno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar a puntero */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambia el color de fondo al pasar el mouse */
+.btn-danger:hover {
+  background-color: #c82333; /* Color más oscuro al pasar el mouse */
+}
+
